@@ -110,7 +110,7 @@ namespace Project_test_task
         /// <param name="e"></param>
         private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            ILoggerFactory loggerFactory = new LoggerFactory();
+            LoggerFactory loggerFactory = new LoggerFactory();
             string? item = checkedListBox1.Items[e.Index].ToString();
             var loggerInstance = loggerFactory.CreateLogger(item);
 
@@ -226,17 +226,17 @@ namespace Project_test_task
             FilltextBoxWithFilePath(textBoxFilePath);
 
         }
-        private void button8_Click(object sender, EventArgs e)
+        private void Button8_Click(object sender, EventArgs e)
         {
             ConsoleManager.ConsoleManager.Hide();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void Button6_Click(object sender, EventArgs e)
         {
             LoggerChangeFileSender();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == 0)
             {
@@ -250,19 +250,19 @@ namespace Project_test_task
             }
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void Button9_Click(object sender, EventArgs e)
         {
             InsertDistrict insert = new InsertDistrict();
             insert.ShowDialog();
             RefreshTable();
         }
 
-        private void textBoxFileResultPath_MouseClick(object sender, MouseEventArgs e)
+        private void TextBoxFileResultPath_MouseClick(object sender, MouseEventArgs e)
         {
             FilltextBoxWithFilePath(textBoxResultFilePath);
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void Button10_Click(object sender, EventArgs e)
         {
             resultSaver.SetPath(textBoxResultFilePath.Text);
         }
@@ -278,8 +278,9 @@ namespace Project_test_task
 
         private void resultButton_Click(object sender, EventArgs e)
         {
-            string selectedDistrict = comboBox2District.SelectedItem?.ToString();
-            OrderFilterByDate orderFilter = new OrderFilterByDate(selectedDistrict, resultSaver);
+            string? selectedDistrict = comboBox2District.SelectedItem?.ToString();
+            if (selectedDistrict == null) return;
+            OrderFilterByDate orderFilter = new(selectedDistrict, resultSaver);
             DataTable filteredData = orderFilter.Filter();
             dataGridView1.DataSource = filteredData;
         }

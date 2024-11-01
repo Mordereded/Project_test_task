@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.ComponentModel.DataAnnotations;
 using Project_test_task.Data;
 using Project_test_task.Uility;
+using Newtonsoft.Json.Linq;
 
 namespace Project_test_task
 {
@@ -30,9 +31,12 @@ namespace Project_test_task
         private void button1_Click(object sender, EventArgs e)
         {
             if (!CheckVaild()) return;
+            double weight = Convert.ToDouble(textboxWeight.Text);
+            int cityDistrictId = comboboxDistrict.SelectedIndex + 1;
+            var deliveryTime = dateTimePicker1.Value;
 
             Order order = new Order
-                (Convert.ToDouble(textboxWeight.Text), comboboxDistrict.SelectedIndex, dateTimePicker1.Value);
+                (weight, cityDistrictId, deliveryTime);
             if (!ValidateOrder(order)) return;
             dataBase.InsertSingleData(order.Weight, order.CityDistrict, order.DeliveryDateTime);
             logger.Log("Заказ был успешно добавлен");

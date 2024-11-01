@@ -229,7 +229,7 @@
             buttonAddDistrict.TabIndex = 13;
             buttonAddDistrict.Text = "Добавить район";
             buttonAddDistrict.UseVisualStyleBackColor = true;
-            buttonAddDistrict.Click += button9_Click;
+            buttonAddDistrict.Click += Button9_Click;
             // 
             // label3
             // 
@@ -298,7 +298,7 @@
             button8.TabIndex = 0;
             button8.Text = "Скрыть";
             button8.UseVisualStyleBackColor = true;
-            button8.Click += button8_Click;
+            button8.Click += Button8_Click;
             // 
             // groupBox2
             // 
@@ -335,7 +335,7 @@
             button10.TabIndex = 7;
             button10.Text = "Изменить";
             button10.UseVisualStyleBackColor = true;
-            button10.Click += button10_Click;
+            button10.Click += Button10_Click;
             // 
             // textBoxResultFilePath
             // 
@@ -343,7 +343,7 @@
             textBoxResultFilePath.Name = "textBoxResultFilePath";
             textBoxResultFilePath.Size = new Size(164, 23);
             textBoxResultFilePath.TabIndex = 6;
-            textBoxResultFilePath.MouseClick += textBoxFileResultPath_MouseClick;
+            textBoxResultFilePath.MouseClick += TextBoxFileResultPath_MouseClick;
             // 
             // label2
             // 
@@ -371,7 +371,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(164, 23);
             comboBox1.TabIndex = 3;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            comboBox1.SelectedIndexChanged += ComboBox1_SelectedIndexChanged;
             // 
             // button7
             // 
@@ -398,7 +398,7 @@
             button6.TabIndex = 0;
             button6.Text = "Изменить";
             button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
+            button6.Click += Button6_Click;
             // 
             // groupBox1
             // 

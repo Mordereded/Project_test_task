@@ -57,10 +57,4 @@ F:\Code\С#\Project_test_task\Project_test_task\obj\Debug\net8.0-windows\Project
 F:\Code\С#\Project_test_task\Project_test_task\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 F:\Code\С#\Project_test_task\Project_test_task\obj\Debug\net8.0-windows\Project_test_task.InsertDistrict.resources
 F:\Code\С#\Project_test_task\Project_test_task\obj\Debug\net8.0-windows\Project_test_task.OrderInsert.resources
-F:\Code\С#\Project_test_task\Project_test_task\bin\Debug\net8.0-windows\nunit.framework.dll
-F:\Code\С#\Project_test_task\Project_test_task\bin\Debug\net8.0-windows\NUnit3.TestAdapter.dll
-F:\Code\С#\Project_test_task\Project_test_task\bin\Debug\net8.0-windows\NUnit3.TestAdapter.pdb
-F:\Code\С#\Project_test_task\Project_test_task\bin\Debug\net8.0-windows\nunit.engine.netstandard.dll
-F:\Code\С#\Project_test_task\Project_test_task\bin\Debug\net8.0-windows\Mono.Cecil.dll
-F:\Code\С#\Project_test_task\Project_test_task\bin\Debug\net8.0-windows\Microsoft.DotNet.InternalAbstractions.dll
-F:\Code\С#\Project_test_task\Project_test_task\bin\Debug\net8.0-windows\System.Xml.XPath.XmlDocument.dll
+F:\Code\С#\Project_test_task\Project_test_task\obj\Debug\net8.0-windows\Project_test_task.sourcelink.json
